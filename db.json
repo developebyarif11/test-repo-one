@@ -11,23 +11,5 @@
           "message": "Name minLength Required 2"
         }
       ]
-    },
-    {
-      "type": "input",
-      "label": "Email Address",
-      "inputType": "email",
-      "name": "email",
-      "validations": [
-        {
-          "name": "required",
-          "validator": "Validators.required",
-          "message": "Email Required"
-        },
-        {
-          "name": "pattern",
-          "validator": "Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$')",
-          "message": "Invalid email"
-        }
-      ]
     }
 ]
