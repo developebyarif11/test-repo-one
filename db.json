@@ -7,7 +7,7 @@
       "validations": [
         {
           "name": "min",
-          "validator": "CustomValidators.min(2)",
+          "validator": CustomValidators.min(2),
           "message": "Name minLength Required 2"
         }
       ]
