@@ -67,7 +67,7 @@
       "value": "true"
     },
     {
-      type: "button",
-      label: "Submit"
+      "type": "button",
+      "label": "Submit"
     }
   ];
