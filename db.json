@@ -1,73 +1,72 @@
-[
-    {
-      "type": "input",
-      "label": "Username",
-      "inputType": "text",
-      "name": "name",
-      "validations": [
-        {
-          "name": "min",
-          "validator": "CustomValidators.min(2)",
-          "message": "Name minLength Required 2",
-          "value":"2"
-        },
-        {
-          "name": "required",
-          "validator": "Validators.required",
-          "message": "Username required",
-          "value":""
-        }
-      ]
-    },
-    {
-      "type": "input",
-      "label": "Email Address",
-      "inputType": "email",
-      "name": "email",
-      "validations": [
-        {
-          "name": "required",
-          "validator": "Validators.required",
-          "message": "Email Required",
-          "value":""
-        },
-        {
-          "name": "email",
-          "validator": "Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$')",
-          "message": "Invalid email address",
-          "value":"^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
-        }
-      ]
-    },
-    {
-      "type": "input",
-      "label": "Password",
-      "inputType": "password",
-      "name": "password",
-      "validations": [
-        {
-          "name": "required",
-          "validator": "Validators.required",
-          "message": "Password Required",
-          "value":""
-        }
-      ]
-    },
-    {
-      "type": "radiobutton",
-      "label": "Gender",
-      "name": "gender",
-      "options": ["Male", "Female"],
-      "value": "Female"
-    },
-    {
-      "type": "checkbox",
-      "label": "Accept Terms",
-      "name": "term",
-      "value": "true"
-    },
-    {
-      "type": "button",
-      "label": "Submit"
-    }
-  ]
+{
+	"data" : 
+	[
+		{
+			"type": "input",
+			"label": "Username",
+			"inputType": "text",
+			"name": "name",
+			"validations": [{
+					"name": "min",
+					"validator": "CustomValidators.min(2)",
+					"message": "Name minLength Required 2",
+					"value": "2"
+				},
+				{
+					"name": "required",
+					"validator": "Validators.required",
+					"message": "Username required",
+					"value": ""
+				}
+			]
+		},
+		{
+			"type": "input",
+			"label": "Email Address",
+			"inputType": "email",
+			"name": "email",
+			"validations": [{
+					"name": "required",
+					"validator": "Validators.required",
+					"message": "Email Required",
+					"value": ""
+				},
+				{
+					"name": "email",
+					"validator": "Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$')",
+					"message": "Invalid email address",
+					"value": "^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
+				}
+			]
+		},
+		{
+			"type": "input",
+			"label": "Password",
+			"inputType": "password",
+			"name": "password",
+			"validations": [{
+				"name": "required",
+				"validator": "Validators.required",
+				"message": "Password Required",
+				"value": ""
+			}]
+		},
+		{
+			"type": "radiobutton",
+			"label": "Gender",
+			"name": "gender",
+			"options": ["Male", "Female"],
+			"value": "Female"
+		},
+		{
+			"type": "checkbox",
+			"label": "Accept Terms",
+			"name": "term",
+			"value": "true"
+		},
+		{
+			"type": "button",
+			"label": "Submit"
+		}
+	]
+}
